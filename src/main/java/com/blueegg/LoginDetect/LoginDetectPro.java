@@ -1,4 +1,4 @@
-package LoginDetect;
+package com.blueegg.LoginDetect;
 
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
@@ -10,7 +10,7 @@ import org.apache.flink.cep.pattern.conditions.SimpleCondition;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
-
+import LoginDetect.LoginEvent;
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;

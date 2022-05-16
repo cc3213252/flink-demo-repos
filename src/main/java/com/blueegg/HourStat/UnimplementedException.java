@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package HourStat;
+package com.blueegg.HourStat;
 
 public class UnimplementedException extends RuntimeException {
 

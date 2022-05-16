@@ -1,4 +1,4 @@
-package LoginDetect;
+package com.blueegg.LoginDetect;
 
 import org.apache.flink.api.common.functions.RichFlatMapFunction;
 import org.apache.flink.api.common.state.ValueState;
@@ -8,6 +8,7 @@ import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
+import LoginDetect.LoginEvent;
 
 public class LoginDetectNFA {
     public static void main(String[] args) throws Exception {

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package FraudDetect.fd02;
+package com.blueegg.FraudDetect.fd02;
 
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -38,7 +38,7 @@ public class FraudDetectionJob {
 
 		DataStream<Alert> alerts = transactions
 			.keyBy(Transaction::getAccountId)
-			.process(new FraudDetector())
+			.process(new FraudDetect.fd02.FraudDetector())
 			.name("fraud-detector");
 
 		alerts

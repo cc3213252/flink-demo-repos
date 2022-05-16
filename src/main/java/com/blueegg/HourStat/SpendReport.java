@@ -1,4 +1,4 @@
-package HourStat;
+package com.blueegg.HourStat;
 
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.Table;
