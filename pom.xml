@@ -11,6 +11,7 @@
     <modules>
         <module>login-detect</module>
         <module>fraud-detect</module>
+        <module>hour-stat</module>
     </modules>
 
 </project>
