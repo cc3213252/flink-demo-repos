@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package FraudDetect.fd02;
+package com.blueegg.FraudDetect.fd02;
 
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;

@@ -59,3 +59,9 @@ bin/kafka-console-consumer.sh --topic transactions --from-beginning --bootstrap-
 运行测试用例报：Failed to get job status so we assume that the job has terminated  
 
 SpendReportWindow测试没效果
+
+## 官网例子
+
+apache/data-generator 这个镜像用例生成数据  
+
+docker中jobmanager无法启动

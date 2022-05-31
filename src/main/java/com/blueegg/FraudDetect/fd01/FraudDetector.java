@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package FraudDetect.fd01;
+package com.blueegg.FraudDetect.fd01;
 
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.util.Collector;

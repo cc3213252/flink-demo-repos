@@ -38,7 +38,7 @@ public class FraudDetectionJob {
 
 		DataStream<Alert> alerts = transactions
 			.keyBy(Transaction::getAccountId)
-			.process(new FraudDetect.fd01.FraudDetector())
+			.process(new FraudDetector())
 			.name("fraud-detector");
 
 		alerts

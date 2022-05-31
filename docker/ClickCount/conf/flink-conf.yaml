@@ -16,13 +16,20 @@
 # limitations under the License.
 ################################################################################
 
-rootLogger.level = Warn
-rootLogger.appenderRef.console.ref = ConsoleAppender
+jobmanager.memory.process.size: 1600Mb
+jobmanager.rpc.address: jobmanager
+blob.server.port: 6124
+query.server.port: 6125
 
-appender.console.name = ConsoleAppender
-appender.console.type = CONSOLE
-appender.console.layout.type = PatternLayout
-appender.console.layout.pattern = %d{HH:mm:ss,SSS} %-5p %-60c %x - %m%n
+taskmanager.memory.process.size: 1728Mb
+taskmanager.numberOfTaskSlots: 2
 
-log4j.logger.org.apache.flink.streaming.api.operators.collect.CollectResultFetcher=OFF
-log4j.logger.org.apache.flink.streaming.api.operators.collect.CollectSinkFunction=OFF
+state.backend: filesystem
+state.checkpoints.dir: file:///tmp/flink-checkpoints-directory
+state.savepoints.dir: file:///tmp/flink-savepoints-directory
+
+heartbeat.interval: 1000
+heartbeat.timeout: 5000
+
+rest.flamegraph.enabled: true
+web.backpressure.refresh-interval: 10000
