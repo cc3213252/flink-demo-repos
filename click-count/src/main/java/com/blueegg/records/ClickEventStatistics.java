@@ -28,10 +28,10 @@ import java.util.Objects;
 public class ClickEventStatistics {
 
 	//using java.util.Date for better readability
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss:SSS")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss:SSS", timezone = "Asia/Shanghai")
 	private Date windowStart;
 	//using java.util.Date for better readability
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss:SSS")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy hh:mm:ss:SSS", timezone = "Asia/Shanghai")
 	private Date windowEnd;
 	private String page;
 	private long count;
